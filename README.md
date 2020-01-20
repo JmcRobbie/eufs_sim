@@ -16,7 +16,9 @@ Clone each of these repos into a workspace and build all with
 
 `catkin build`
 
-ROS/Gazebo simulation packages for driverless FSAE vehicles.
+*The vast majority of this repository is not my work and has been developed by the very talented team at Edinburgh University Formula Student. Do not cite me as the author of this package.*
+
+## ROS/Gazebo simulation packages for driverless FSAE vehicles.
 
 ![simulation](https://eufs.eusa.ed.ac.uk/wp-content/uploads/2018/05/eufsa-sim.jpg)
 
