@@ -1,5 +1,21 @@
 # EUFS Autonomous Simulation
 
+## This entire package may include slight changes from the forked repo specific to my use case.
+To use this repo clone this repo on master branch with the following repos also included in the workspace. 
+
+It is designed to work with the melodic distro of ROS - not the kinetic one, so be sure to checkout the melodic branches of any repo you clone - if they exist. 
+
+* robot_state_publisher https://github.com/JmcRobbie/robot_state_publisher
+* image_pipeline https://github.com/JmcRobbie/image_pipeline
+* geometry2 https://github.com/JmcRobbie/geometry2
+* kdl_parser https://github.com/JmcRobbie/kdl_parser
+* robotnik_msgs https://github.com/JmcRobbie/robotnik_msgs
+* + any others that you decide to use/try.  
+
+Clone each of these repos into a workspace and build all with 
+
+`catkin build`
+
 ROS/Gazebo simulation packages for driverless FSAE vehicles.
 
 ![simulation](https://eufs.eusa.ed.ac.uk/wp-content/uploads/2018/05/eufsa-sim.jpg)
@@ -12,22 +28,22 @@ ROS/Gazebo simulation packages for driverless FSAE vehicles.
 ## Setup Instructions
 ### 1. Install Prerequisites <a name="requirements"></a>
 ##### - Install Ubuntu 16.04 LTS
-##### - Install [ros-kinetic-desktop-full](http://wiki.ros.org/kinetic/Installation)
+##### - Install [ros-melodic-desktop-full](http://wiki.ros.org/melodic/Installation)
 ##### - Install ROS packages:
-* ros-kinetic-ackermann-msgs
-* ros-kinetic-twist-mux
-* ros-kinetic-joy
-* ros-kinetic-controller-manager
-* ros-kinetic-robotnik-msgs
-* ros-kinetic-velodyne-simulator
-* ros-kinetic-effort-controllers
-* ros-kinetic-velocity-controllers
-* ros-kinetic-joint-state-controller
-* ros-kinetic-gazebo-ros-control
+* ros-melodic-ackermann-msgs
+* ros-melodic-twist-mux
+* ros-melodic-joy
+* ros-melodic-controller-manager
+* ros-melodic-robotnik-msgs
+* ros-melodic-velodyne-simulator
+* ros-melodic-effort-controllers
+* ros-melodic-velocity-controllers
+* ros-melodic-joint-state-controller
+* ros-melodic-gazebo-ros-control
 
 Or if you are lazy like my here's a one-liner
 ```
-sudo apt-get install ros-kinetic-ackermann-msgs ros-kinetic-twist-mux ros-kinetic-joy ros-kinetic-controller-manager ros-kinetic-robotnik-msgs ros-kinetic-velodyne-simulator ros-kinetic-effort-controllers ros-kinetic-velocity-controllers ros-kinetic-joint-state-controller ros-kinetic-gazebo-ros-control ros-kinetic-robotnik-msgs
+sudo apt-get install ros-melodic-ackermann-msgs ros-melodic-twist-mux ros-melodic-joy ros-melodic-controller-manager ros-melodic-robotnik-msgs ros-melodic-velodyne-simulator ros-melodic-effort-controllers ros-melodic-velocity-controllers ros-melodic-joint-state-controller ros-melodic-gazebo-ros-control ros-melodic-robotnik-msgs
 ```
 
 
@@ -55,7 +71,7 @@ An easy way to control the car is via
 ```roslaunch robot_control rqt_robot_control.launch```
 
 ### 3. Additional sensors <a name="sensors"></a>
-Additional sensors for testing are avilable via the `ros-kinetic-robotnik-sensor` package. Some of them are already defined in `eufs_description/robots/eufs.urdf.xarco`. You can simply commment them in and attach them appropriately to the car.
+Additional sensors for testing are avilable via the `ros-melodic-robotnik-sensor` package. Some of them are already defined in `eufs_description/robots/eufs.urdf.xarco`. You can simply commment them in and attach them appropriately to the car.
 
 
 **Sensor suit of the car by default:**
