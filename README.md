@@ -12,6 +12,11 @@ It is designed to work with the melodic distro of ROS - not the kinetic one, so 
 * robotnik_msgs https://github.com/JmcRobbie/robotnik_msgs
 * + any others that you decide to use/try.  
 
+Apparently this is important as well: 
+
+sudo apt-get install ros*velocity*controller* ros*effort*controller* ros*position*controller*
+
+
 Clone each of these repos into a workspace and build all with 
 
 `catkin build`
