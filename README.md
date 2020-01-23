@@ -16,8 +16,11 @@ Apparently this is important as well:
 
 sudo apt-get install ros*velocity*controller* ros*effort*controller* ros*position*controller*
 
+And this:
 
 Clone each of these repos into a workspace and build all with 
+
+sudo apt install ros-melodic*velodyne*
 
 `catkin build`
 
